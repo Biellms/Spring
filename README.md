@@ -5,6 +5,6 @@
 
 <hr>
   
-### Exercicios utilizando Spring Boot, propostos pela Generation Brasil.
+### Exercícios utilizando Spring Boot, propostos pela Generation Brasil.
 <hr>
 </div>
