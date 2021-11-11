@@ -1,11 +1,11 @@
 
 <div align ="center">
   
-![Logo Spring](https://i.imgur.com/BCIWkyk.png)
+![Logo Spring](https://i.imgur.com/OMa4ULN.png)
 
 <hr>
   
-### Exercícios utilizando Spring Boot, para criação de APIs Rest. Propostos pela Generation Brasil.
+### Exercícios utilizando Spring Framework, para criação de APIs Rest. Propostos pela Generation Brasil.
 <hr>
 </div>
 
@@ -16,8 +16,8 @@
 
 ### **Linguagens e Ferramentas utilizadas** 🛠
 - Java
-- Eclipse
-- Spring Boot
+- Spring Tool Suite
+- Spring Framework
 - MySQL
 
 - <a href="https://github.com/Biellms/SpringBoot/tree/main/Postman" target="_blank"><p target="_blank">Postman</a>
