@@ -17,7 +17,7 @@
 ### **Linguagens e Ferramentas utilizadas** 🛠
 - Java
 - Spring Tool Suite
-- Spring Framework
+- Spring
 - MySQL
 
 - <a href="https://github.com/Biellms/SpringBoot/tree/main/Postman" target="_blank"><p target="_blank">Postman</a>
