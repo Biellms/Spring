@@ -45,7 +45,7 @@ public class ProdutoController {
 	// SELECT * FROM tb_produto WHERE plataforma LIKE '%?%';
 		@GetMapping("/plataforma/{plataforma}")
 		public ResponseEntity<List<Produto>> GetByPlataforma (@PathVariable String plataforma) {
-			return ResponseEntity.ok(produtoRepository.findAllByNomeContainingIgnoreCase(plataforma));
+			return ResponseEntity.ok(produtoRepository.findAllByPlataformaContainingIgnoreCase(plataforma));
 	}
 	
 	// INSERT INTO tb_produto

@@ -12,7 +12,7 @@ import br.org.generation.lojagames.model.Categoria;
 import br.org.generation.lojagames.repository.CategoriaRepository;
 
 @RestController
-@RequestMapping("/categorias")
+@RequestMapping("/categoria")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
 	

@@ -8,7 +8,7 @@ import javax.validation.constraints.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_categoria") // Nome da tabela
+@Table(name = "tb_categorias") // Nome da tabela
 public class Categoria {
 
 	// Atributos

@@ -6,6 +6,147 @@
 	},
 	"item": [
 		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YmllbGxtc0BnbWFpbC5jb206MTIzNDU2Nzg=",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/usuarios/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Logar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"biellms@gmail.com\",\r\n    \"senha\" : \"12345678\",\r\n    \"data\" : \"29/01/2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios/logar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"logar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"biellms@gmail.com\",\r\n    \"senha\" : \"12345678\",\r\n    \"data\" : \"29/01/2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios/cadastrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"biell2ms@gmail.com\",\r\n    \"senha\" : \"12345678\",\r\n    \"data\" : \"29/01/2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios/atualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"atualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YmllbGxtc0BnbWFpbC5jb206MTIzNDU2Nzg=",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/usuarios/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Produto",
 			"item": [
 				{
@@ -231,7 +372,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tipo\" : \"\"\r\n}",
+							"raw": "{\r\n    \"tipo\" : \"teste 1\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -311,7 +452,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\" : \"\",\r\n    \"descricao\" : \"\",\r\n    \"plataforma\" : \"\",\r\n    \"preco\" : 100.00,\r\n    \"imagem\" : \"\",\r\n    \"categoria_id\" : {\r\n        \"id\" : 10\r\n    }\r\n}",
+							"raw": "{\r\n    \"nome\" : \"\",\r\n    \"descricao\" : \"\",\r\n    \"plataforma\" : \"\",\r\n    \"preco\" : 100.00,\r\n    \"imagem\" : \"\",\r\n    \"categoria_id\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
