@@ -14,7 +14,7 @@ import br.org.generation.lojagames.model.Produto;
 import br.org.generation.lojagames.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping("/produto")
+@RequestMapping("/produtos")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProdutoController {
 	

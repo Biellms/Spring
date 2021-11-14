@@ -10,11 +10,10 @@ import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 
 import br.org.generation.farmacia.model.Produto;
-
 import br.org.generation.farmacia.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping("/produto")
+@RequestMapping("/produtos")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProdutoController {
 
@@ -85,5 +84,12 @@ public class ProdutoController {
 	@GetMapping("/preco_menor/{preco}")
 	public ResponseEntity<List<Produto>> getByMenorPreco (@PathVariable BigDecimal id) {
 		return ResponseEntity.ok(produtoRepository.findByPrecoLessThanOrderByPrecoDesc(id));
+	}
+	
+	/* SELECT * FROM tb_produto 
+	WHERE preco BETWEEN ? AND ?;*/
+	@GetMapping("/preco_inicial/{inicio}/preco_final/{fim}")
+	public ResponseEntity<List<Produto>> getByPrecoEntre(@PathVariable BigDecimal inicio, @PathVariable BigDecimal fim) {
+		return ResponseEntity.ok(produtoRepository.buscarProdutosEntre(inicio, fim));
 	}
 }

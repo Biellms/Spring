@@ -32,7 +32,6 @@ public class Produto {
 	@JsonFormat(shape = JsonFormat.Shape.STRING)
 	@NotNull(message = "O atributo plataforma é obrigatório!")
 	@Positive(message = "O preço deve ser maior do que zero!")
-	@Digits(integer=6, fraction=2, message = "O preço deve conter 6 inteiros e 2 fracionados!")
 	private BigDecimal preco;
 	
 	private String imagem;

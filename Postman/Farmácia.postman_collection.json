@@ -6,6 +6,154 @@
 	},
 	"item": [
 		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "root",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "root",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Logar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"biell@gmail.com\",\r\n    \"senha\" : 12345678\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios/logar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"logar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"biell@gmail.com\",\r\n    \"senha\" : 12345678,\r\n    \"data\" : \"29/01/2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios/cadastrar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic YmllbGxAZ21haWwuY29tOjEyMzQ1Njc4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"nome\" : \"Gabriel Mendes\",\r\n    \"usuario\" : \"gabriel@gmail.com\",\r\n    \"senha\" : 12345678,\r\n    \"data\" : \"29/01/2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios/atualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"atualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Produto",
 			"item": [
 				{
@@ -14,13 +162,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}
@@ -33,13 +181,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}
@@ -52,13 +200,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/produto/nome/",
+							"raw": "localhost:8080/produtos/nome/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								"nome",
 								""
 							]
@@ -72,15 +220,37 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/produto/marca/",
+							"raw": "localhost:8080/produtos/marca/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								"marca",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Entre Preços",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/produtos/preco_inicial/30/preco_final/50",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"produtos",
+								"preco_inicial",
+								"30",
+								"preco_final",
+								"50"
 							]
 						}
 					},
@@ -101,13 +271,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}
@@ -129,13 +299,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}
@@ -148,13 +318,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}
@@ -172,13 +342,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/categoria/",
+							"raw": "localhost:8080/categorias/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"categoria",
+								"categorias",
 								""
 							]
 						}
@@ -191,13 +361,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/categoria/",
+							"raw": "localhost:8080/categorias/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"categoria",
+								"categorias",
 								""
 							]
 						}
@@ -210,13 +380,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/categoria/tipo/",
+							"raw": "localhost:8080/categorias/tipo/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"categoria",
+								"categorias",
 								"tipo",
 								""
 							]
@@ -239,13 +409,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/categoria/",
+							"raw": "localhost:8080/categorias/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"categoria",
+								"categorias",
 								""
 							]
 						}
@@ -267,13 +437,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/categoria/",
+							"raw": "localhost:8080/categorias/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"categoria",
+								"categorias",
 								""
 							]
 						}
@@ -286,13 +456,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/categoria/1",
+							"raw": "localhost:8080/categorias/1",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"categoria",
+								"categorias",
 								"1"
 							]
 						}
@@ -319,13 +489,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}
@@ -347,13 +517,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/produto/",
+							"raw": "localhost:8080/produtos/",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"produto",
+								"produtos",
 								""
 							]
 						}

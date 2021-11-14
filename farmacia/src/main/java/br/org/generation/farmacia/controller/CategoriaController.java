@@ -12,7 +12,7 @@ import br.org.generation.farmacia.model.Categoria;
 import br.org.generation.farmacia.repository.CategoriaRepository;
 
 @RestController
-@RequestMapping("/categoria")
+@RequestMapping("/categorias")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
 	
