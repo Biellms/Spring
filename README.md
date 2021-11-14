@@ -18,9 +18,9 @@
 <hr>
 
 ### **Linguagens e Ferramentas utilizadas** 🛠
-- Java
+- <a href="https://github.com/Biellms/JavaProjeto" target="_blank"><p target="_blank">Java</a>
 - Spring Tool Suite
-- Spring
-- MySQL
+- <a href="https://github.com/Biellms/Spring" target="_blank"><p target="_blank">Spring</a>
+- <a href="https://github.com/Biellms/MySQL" target="_blank"><p target="_blank">MySQL</a>
 
 - <a href="https://github.com/Biellms/SpringBoot/tree/main/Postman" target="_blank"><p target="_blank">Postman</a>
