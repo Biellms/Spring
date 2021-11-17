@@ -35,6 +35,16 @@ public class Usuario {
 	@NotNull(message = "O atributo Data de Nascimento é obrigatório!")
 	private LocalDate data;
 	
+	public Usuario(long id, String nome, String usuario, String senha, LocalDate data) {
+		this.id = id;
+		this.nome = nome;
+		this.usuario = usuario;
+		this.senha = senha;
+		this.data = data;
+	}
+	
+	public Usuario() { }
+
 	// Getters and Setters
 	public long getId() { return id; }
 
